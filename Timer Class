@@ -17,12 +17,12 @@ public class Timer
 	}
 	public void startTime()
 	{
-		Timer.start();
+		this.start();
 	}
 	
 	public void stopTime()
 	{
-		Timer.stop();
+		this.stop();
 	}
 	
 	public void doNothing(int milliseconds)
