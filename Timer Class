@@ -1,0 +1,39 @@
+public class Timer
+{
+	private int seconds = 0;
+	private boolean timerOn = true;
+	
+	
+	public void runTime()
+	{
+		while(true)
+		{
+			if(this.seconds < 1000)
+			{
+				seconds++;
+			}
+		
+		}
+	}
+	public void startTime()
+	{
+		Timer.start();
+	}
+	
+	public void stopTime()
+	{
+		Timer.stop();
+	}
+	
+	public void doNothing(int milliseconds)
+	{
+		try
+		{
+			Thread.sleep(milliseconds);
+		}
+		catch(InterruptedException e)
+		{
+			System.out.print("Timer Interrupted");
+		}
+	}
+}
